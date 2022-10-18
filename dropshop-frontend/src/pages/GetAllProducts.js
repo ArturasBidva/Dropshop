@@ -7,6 +7,7 @@ import "../product.css"
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart} from "../store/slices/cart/cartSlice";
 import Pagination from "../components/Pagination";
+import {useTranslation} from "react-i18next";
 
 const GetAllProducts = () => {
     useEffect(() => {
@@ -22,16 +23,20 @@ const GetAllProducts = () => {
     const addProduct = (product) => dispatcher(addToCart(product));
     const dispatcher = useDispatch();
     const [currentPage, setCurrentPage] = useState(1);
-    const [productsPerPage] = useState(10)
-    const indexOfLastPost = currentPage * productsPerPage;
-    const indexOfFirstPost = indexOfLastPost - productsPerPage;
+    const [productsPerPage] = useState(12)
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     let productss = products.filter(it => it.category === window.location.pathname.replace("/", ""))
-    const currentProducts = productss.slice(indexOfFirstPost, indexOfLastPost);
+    const currentProducts = productss.slice(indexOfFirstProduct, indexOfLastProduct);
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
+    const {t} = useTranslation('product');
 
 
     return (
         <>
+            <div className="pagination">
+                <Pagination postPerPage={productsPerPage} totalProducts={productss.length} paginate={paginate}/>
+            </div>
             {
                 <div className="product-container">
                     {currentProducts.map((product, index) => (
@@ -41,13 +46,12 @@ const GetAllProducts = () => {
                             someKey={product}
                             currentUser={user}
                             addToCart={addProduct}
+                            translate={t}
                         />
                     ))}
                 </div>
 
-            }<div className="pagination">
-            <Pagination postPerPage={productsPerPage} totalPosts={productss.length} paginate={paginate}/>
-        </div>
+            }
         </>
 
     )

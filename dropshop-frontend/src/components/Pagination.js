@@ -1,9 +1,9 @@
 import {Button} from "@mui/material";
 import {NavLink} from "react-router-dom";
 
-const Pagination = ({postPerPage, totalPosts, paginate}) => {
+const Pagination = ({postPerPage, totalProducts, paginate}) => {
     const pageNumbers = [];
-    for(let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++){
+    for(let i = 1; i <= Math.ceil(totalProducts / postPerPage); i++){
         pageNumbers.push(i);
 
     }

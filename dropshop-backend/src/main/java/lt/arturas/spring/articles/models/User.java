@@ -78,14 +78,6 @@ public class User implements UserDetails {
         return true;
     }
 
-    public boolean isAdmin() {
-        return roles.stream().anyMatch(role -> role.getRoleName().equals("ADMIN"));
-    }
-
-    public boolean isAuthor() {
-        return roles.stream().anyMatch(role -> role.getRoleName().equals("AUTHOR"));
-    }
-
     public boolean isUser() {
         return roles.stream().anyMatch(role -> role.getRoleName().equals("USER"));
     }

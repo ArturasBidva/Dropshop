@@ -47,7 +47,7 @@ function Navbar() {
                         <Button color="inherit" component={NavLink} to="/orders">{t('orders')}</Button>
                     }{!user &&
                         < >
-
+                            <Button color="inherit" component={NavLink} to="/">{t('home')}</Button>
                             <Button color="inherit" component={NavLink} to="/login">{t('login')}</Button>
                             <Button color="inherit" component={NavLink} to="/register">{t('register')}</Button>
                         </>

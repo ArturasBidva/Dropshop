@@ -7,8 +7,6 @@ import * as Yup from "yup";
 import {connect} from "react-redux";
 import {resetCart} from "../../store/slices/cart/cartSlice";
 
-
-
 class OrderForm extends Component {
     handleOnClick = (data) => {
         checkout(data).then(r => console.log("gg")).finally()
@@ -74,7 +72,8 @@ class OrderForm extends Component {
                                             {
                                                 props.isSubmitting ? <CircularProgress size={40}/> :
                                                     <div className="checkout-button-cart">
-                                                        <Button disabled={this.props.totalPrice > this.props.balance} type="submit" variant="contained"
+                                                        <Button disabled={this.props.totalPrice > this.props.balance}
+                                                                type="submit" variant="contained"
                                                                 color="success">{this.props.translator('checkout')}</Button>
                                                     </div>
                                             }
@@ -89,6 +88,7 @@ class OrderForm extends Component {
         )
     }
 }
+
 const mapDispatchToProps = dispatch => {
     return {
         onTodoClick: () => {
@@ -97,5 +97,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-
-export default connect(null ,mapDispatchToProps)(OrderForm)
+export default connect(null, mapDispatchToProps)(OrderForm)

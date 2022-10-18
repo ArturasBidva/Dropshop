@@ -35,18 +35,7 @@ public class ProductService {
         productRepository.save(productEntity);
     }
 
-    public void deleteProduct(Long postId) {
-        productRepository.deleteById(postId);
-    }
-
-    public void updateProduct(Product product) {
-        ProductEntity referenceById = productRepository.getReferenceById(product.getId());
-        referenceById.setTitle(product.getTitle());
-        referenceById.setImageUrl(product.getImageUrl());
-        referenceById.setId(product.getId());
-        productRepository.save(referenceById);
-    }
-    //2.7 hour
+    //2.35 hour
     @Scheduled(fixedDelay = 10000000)
     void fetchProducts() {
         barboraFetcher.fetchProductsByCategory("https://barbora.lt/namai-ir-laisvalaikis?page=2",

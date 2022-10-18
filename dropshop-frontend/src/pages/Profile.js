@@ -81,6 +81,7 @@ const Profile = () => {
                                                     balanceValue={setAddValue}
                                                     balance={addValue}
                                                     fetchData={fetchData}
+                                                    translate={t}
 
                                                 />
                                             </div>

@@ -18,7 +18,7 @@ class Product extends Component {
                         {this.props.currentUser && <div className="product-item-add-button-container">
                             <button
                                 className="product-button"
-                                onClick={() => this.props.addToCart(this.props.itemproduct)}><b>Add to cart</b></button>
+                                onClick={() => this.props.addToCart(this.props.itemproduct)}><b>{this.props.translate('addToCart')}</b></button>
                         </div>}
                     </div>
                 </div>

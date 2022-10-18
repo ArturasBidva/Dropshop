@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {Component} from 'react';
 import {topUpBalance} from "../../api/userApi";
 
 
@@ -16,11 +16,10 @@ class AddBalance extends Component {
     }
 
     handleSubmit(event) {
-        alert('You successfully added money to your balance: ' );
+        alert(this.props.translate('topUpBalance'));
         event.preventDefault();
         this.props.fetchData();
     }
-
 
     render() {
 
@@ -41,13 +40,14 @@ class AddBalance extends Component {
                         )}
                     </select>
                 </label>
-                <button type="submit" value="Submit" disabled={this.props.creditCards.length === 0} onClick={() => onSubmit(parseInt(this.props.balance))}>Submit</button>
+                <button type="submit" value="Submit" disabled={this.props.creditCards.length === 0}
+                        onClick={() => onSubmit(parseInt(this.props.balance))}>Submit
+                </button>
                 <input value={this.props.balance} name="balance"
                        onChange={e => this.props.balanceValue(e.target.value)}/>
             </form>
         );
     }
 }
-
 
 export default AddBalance;

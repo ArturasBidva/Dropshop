@@ -21,4 +21,4 @@ const userSlice = createSlice(
     });
 
 export default userSlice.reducer;
-export const {addUserState, removeUser, payWithBalance} = userSlice.actions;
+export const {addUserState, removeUser} = userSlice.actions;

@@ -3,9 +3,7 @@
     "key": "Welcome, this key is translated!",
     "keyWithParams": "Hello {{name}} {{surname}}"
   },
-  "product" : {
-    "name": "Product name"
-  },
+
   "cart" : {
     "name": "Product name",
     "category": "Product category",
@@ -90,7 +88,8 @@
     "addBalance": "Add balance",
     "card": "Your cards",
     "information": "Information",
-    "functions": "Functions"
+    "functions": "Functions",
+    "topUpBalance": "You successfully added money to your balance "
 
   },
   "orderPage": {
@@ -101,5 +100,8 @@
     "city": "Miestas",
     "totalPrice": "Usakymo kaina"
 
+  },
+  "product": {
+    "addToCart": "Add to cart"
   }
 }

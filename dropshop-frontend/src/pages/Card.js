@@ -2,7 +2,6 @@ import {Form, Formik} from "formik";
 import {Alert, Box, Button, CircularProgress, Paper, Stack, Typography} from "@mui/material";
 import FormTextInput from "../components/forms/FormTextInput";
 import {useState} from "react";
-import Cards from 'react-credit-cards';
 import {addCreditCard} from "../api/userApi";
 import {useTranslation} from "react-i18next";
 import * as Yup from "yup";

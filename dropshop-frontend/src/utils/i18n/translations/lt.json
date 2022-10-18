@@ -75,7 +75,11 @@
     "addBalance": "Papildyti balansa",
     "card": "Jusu korteles",
     "information": "Informacija",
-    "functions": "Funkcijos"
+    "functions": "Funkcijos",
+    "topUpBalance": "Sekmingai pridejote pinigu prie savo balanso"
 
+  },
+  "product": {
+    "addToCart": "Prideti i krepseli"
   }
 }
