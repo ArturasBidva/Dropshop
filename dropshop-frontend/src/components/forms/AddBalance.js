@@ -41,7 +41,7 @@ class AddBalance extends Component {
                         )}
                     </select>
                 </label>
-                <button type="submit" value="Submit" disabled={!this.props.creditcards === null} onClick={() => onSubmit(parseInt(this.props.balance))}>Submit</button>
+                <button type="submit" value="Submit" disabled={this.props.creditCards.length === 0} onClick={() => onSubmit(parseInt(this.props.balance))}>Submit</button>
                 <input value={this.props.balance} name="balance"
                        onChange={e => this.props.balanceValue(e.target.value)}/>
             </form>
