@@ -25,14 +25,16 @@ public class BarboraFetcher {
             HtmlElement imeidzas = all.getFirstByXPath(".//img[@itemprop='image']");
             String imageSrc = imeidzas.getAttribute("src");
             HtmlElement id = all.getFirstByXPath(".//div[@data-b-item-id]");
-            String getRightid = id.getAttribute("data-b-item-id");
-            String replaceStringValueInId = getRightid.replace("BR", "");
-            Long testas = Long.parseLong(replaceStringValueInId);
+            String getRightId = id.getAttribute("data-b-item-id");
+            String replaceStringValueInId = getRightId.replace("BR", "");
+            Long newId = Long.parseLong(replaceStringValueInId);
             String removeEurSign = kaina.asNormalizedText().replace("€" , "");
-            String formatedPrice = removeEurSign.replace(",", ".");
-            BigDecimal bigDecimal = new BigDecimal(formatedPrice);
+            String formattedPrice = removeEurSign.replace(",", ".");
+            BigDecimal oldPrice = new BigDecimal(formattedPrice);
+            BigDecimal multiply = oldPrice.multiply(BigDecimal.valueOf(0.2));
+            BigDecimal addNewPrice = oldPrice.add(multiply);
 
-            produktai.add(new Product(imageSrc,pavadinimas.asNormalizedText(),bigDecimal,category,testas));
+            produktai.add(new Product(imageSrc,pavadinimas.asNormalizedText(),addNewPrice,category,newId));
         }
         return produktai;
     }

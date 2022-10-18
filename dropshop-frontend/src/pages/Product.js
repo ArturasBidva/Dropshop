@@ -12,7 +12,7 @@ class Product extends Component {
                 </div>
                 <div className="product-details">
                     <span className="product-catagory"></span>
-                    <h4><a href="">{this.props.itemproduct.title}</a></h4>
+                    <h4><a>{this.props.itemproduct.title}</a></h4>
                     <div className="product-bottom-details">
                         <div className="product-price">{this.props.itemproduct.priceWithCard} Eur</div>
                         {this.props.currentUser && <div className="product-item-add-button-container">

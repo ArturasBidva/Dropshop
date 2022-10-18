@@ -111,6 +111,7 @@ export default () => {
                                         products={products}
                                         totalPrice={total}
                                         error={error}
+                                        balance={balance}
                                     />
                                 </div>
                             </div>

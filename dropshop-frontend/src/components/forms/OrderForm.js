@@ -74,7 +74,7 @@ class OrderForm extends Component {
                                             {
                                                 props.isSubmitting ? <CircularProgress size={40}/> :
                                                     <div className="checkout-button-cart">
-                                                        <Button type="submit" variant="contained"
+                                                        <Button disabled={this.props.totalPrice > this.props.balance} type="submit" variant="contained"
                                                                 color="success">{this.props.translator('checkout')}</Button>
                                                     </div>
                                             }
