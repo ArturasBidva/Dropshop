@@ -1,0 +1,105 @@
+{
+  "translation": {
+    "key": "Welcome, this key is translated!",
+    "keyWithParams": "Hello {{name}} {{surname}}"
+  },
+  "product" : {
+    "name": "Product name"
+  },
+  "cart" : {
+    "name": "Product name",
+    "category": "Product category",
+    "quantity": "Quantity",
+    "price": "Price",
+    "totalItem": "Products price",
+    "total" : "Total cost: ",
+    "balance": "Wallet balance: ",
+    "firstname": "Your firstname....",
+    "lastname": "Your lastname....",
+    "address": "Your address....",
+    "city": "Your city....",
+    "firstnameLabel": "Your firstname",
+    "lastnameLabel": "Your lastname",
+    "addressLabel": "Your address",
+    "cityLabel": "Your city",
+    "checkout": "Checkout"
+
+  },
+  "products" : {
+    "name": "Name",
+    "category": "Category",
+    "description": "Description",
+    "quantity": "Quantity",
+    "price": "Price"
+  },
+  "creditCard" : {
+    "creditCardNumberLabel": "Card number",
+    "creditCardHolderNameLabel": "Card holder's name and surname",
+    "creditCardInfoName": "Your name",
+    "cardExpDateLabel": "Card expiration date",
+    "cvcNumberLabel": "Card security number",
+    "addCard": "Add card",
+    "creditCardNumber": "Card number....",
+    "CreditCardHolderName": "Card holder's name....",
+    "cardExpDate": "Card expiration date....",
+    "cvcNumber": "Card security number...."
+  },
+  "header" :{
+    "profile": "Profile",
+    "register": "Register",
+    "createProduct": "Create product",
+    "updateProduct": "Update product",
+    "userRegistration": "User registration",
+    "login": "Login",
+    "logout": "Logout",
+    "orders": "Orders"
+  },
+  "sidebar": {
+    "vegetablesAndFruits": "Vegetables and fruits",
+    "dairyProductsAndEggs": "Dairy products and eggs",
+    "breadProductsAndConfectionary": "Bread products and confectionery",
+    "homeAndFreeTime": "Home and leisure",
+    "drinks": "Drinks",
+    "cleanlinessAndPetGoods": "Cleanliness and pet goods",
+    "frozenFood": "Frozen food",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "home": "Home",
+    "profile": "Profile",
+    "orders": "Orders"
+
+  },
+  "pageLogin": {
+    "login": "Login",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "username": "Your user Username....",
+    "password": "Your user password....",
+    "name": "Your name....",
+    "usernameErrorCheck": "Username is a required field",
+    "passwordErrorCheck": "Password is a required field",
+    "nameLabel": "Your name",
+    "register": "Register"
+  },
+  "profilePage": {
+    "username": "Your username",
+    "balance": "Your balance",
+    "addCard": "Add new card",
+    "removeCard": "Delete card",
+    "addBalance": "Add balance",
+    "card": "Your cards",
+    "information": "Information",
+    "functions": "Functions"
+
+  },
+  "orderPage": {
+    "orderId": "Usakymo id",
+    "firstName": "Vardas",
+    "lastName": "Pavarde",
+    "address": "Adresas",
+    "city": "Miestas",
+    "totalPrice": "Usakymo kaina"
+
+  }
+}

@@ -1,0 +1,31 @@
+
+.homepage {
+    height: 100vh;
+    background: url("https://img.freepik.com/free-photo/top-view-assortment-vegetables-paper-bag_23-2148853335.jpg?w=1380&t=st=1665061569~exp=1665062169~hmac=583db69982a41440cccff5bfee3a7d134acba44be6f0daf2cf9f6239a793abb5");
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, .6) 0 0 0 1000000px inset;
+}
+.text-homepage{
+    flex-direction: column;
+    font-size: 75px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.text-homepage-second{
+    font-size: 40px;
+}
+.search {
+    width: 15%;
+}
+.search-button-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}

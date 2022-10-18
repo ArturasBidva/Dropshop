@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="03f8f07a-fc8b-4f2c-a226-631aa720efa0" name="blogoDB Mapping">
+      <data-sources db="e4bd3572-4675-4def-b050-3e0568f207d9" ddl="e65f57a5-6ec3-44b7-9999-609087486ec9" />
+      <scope>
+        <node kind="database" qname="BLOGODB" />
+      </scope>
+    </mapping>
+  </component>
+</project>

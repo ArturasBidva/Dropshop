@@ -1,0 +1,81 @@
+{
+  "cart" : {
+    "name": "Produkto vardas",
+    "category": "Produkto kategorija",
+    "quantity": "Kiekis",
+    "price": "Kaina",
+    "totalItem": "Produktu kaina",
+    "balance": "Jusu pinigines balansas: ",
+    "total" : "Krepselio kaina: ",
+    "firstname": "Jusu vardas....",
+    "lastname": "Jusu pavarde....",
+    "address": "Jusu adresas....",
+    "city": "Jusu miestas....",
+    "firstnameLabel": "Jusu vardas",
+    "lastnameLabel": "Jusu pavarde",
+    "addressLabel": "Jusu adresas",
+    "cityLabel": "Jusu miestas",
+    "checkout": "Atsiskaityti"
+
+  },
+  "header" :{
+    "profile": "Jusu profilis",
+    "register": "Registracija",
+    "createProduct": "Sukurti produkta",
+    "updateProduct": "Atnaujinti produkta",
+    "userRegistration": "Vartotojo registracija",
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "orders": "Uzsakymai"
+  },
+  "creditCard" : {
+    "creditCardNumberLabel": "Korteles numeris",
+    "creditCardHolderNameLabel": "Korteles savininko vardas ir pavarde",
+    "creditCardInfoName": "Jusu vardas",
+    "cardExpDateLabel": "Korteles galiojimo laikas",
+    "cvcNumberLabel": "Korteles saugos kodas",
+    "addCard": "Prideti kortele",
+    "creditCardNumber": "Korteles numeris....",
+    "CreditCardHolderName": "Korteles savininko vardas ir pavarde....",
+    "cardExpDate": "Korteles galiojimo laikas....",
+    "cvcNumber": "Korteles saugos kodas...."
+  },
+  "sidebar": {
+    "vegetablesAndFruits": "Daržovės ir vaisiai",
+    "dairyProductsAndEggs": "Pieno gaminiai ir kiaušiniai",
+    "breadProductsAndConfectionary": "Duonos gaminiai ir konditerija",
+    "homeAndFreeTime": "Namai ir laisvalaikis",
+    "drinks": "Gėrimai",
+    "cleanlinessAndPetGoods": "Švaros ir gyvūnų prekės",
+    "frozenFood": "Šaldytas maistas",
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "register": "Registracija",
+    "home": "Namai",
+    "profile": "Profilis",
+    "orders": "Uzsakymai"
+  },
+  "pageLogin": {
+    "login" : "Prisijungti",
+    "usernameLabel": "Vartotojo vardas",
+    "passwordLabel": "Vartotojo slaptazodis",
+    "username": "Jusu prisijungimo vardas....",
+    "password": "Jusu slaptazodis....",
+    "name": "Jusu vardas....",
+    "usernameErrorCheck": "Vartotojo vardo laukas yra privalomas",
+    "passwordErrorCheck": "Vartotojo slaptazodio laukas yra privalomas",
+    "nameLabel": "Jusu vardas",
+    "register": "Registruotis"
+  },
+  "profilePage": {
+    "username": "Jusu username",
+    "balance": "Jusu balansas",
+    "addCard": "Prideti kortele",
+    "removeCard": "Istrinti kortele",
+    "addBalance": "Papildyti balansa",
+    "card": "Jusu korteles",
+    "information": "Informacija",
+    "functions": "Funkcijos"
+
+  }
+}
